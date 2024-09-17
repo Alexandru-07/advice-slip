@@ -1,0 +1,106 @@
+* {
+  font-family: "StratosWeb", sans-serif;
+}
+@font-face {
+  font-family: StratosWeb;
+  src: url("./Assets/Stratos-font/Stratos-Light.ttf") format("truetype");
+}
+
+body {
+  background-color: #202632;
+}
+
+.advice-card {
+  width: 540px;
+  height: 335px;
+  border-radius: 20px 20px;
+  background-color: #313a49;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice-header {
+  color: #53ffab;
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+}
+
+.adivce-comp-text {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.adivce-comp-text p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.8px;
+  text-align: center;
+  color: #d9d9d9;
+  margin: 0;
+  height: 130px;
+}
+
+.advice-style-elements {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.advice-style-comp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.adivce-comp-button {
+  margin-top: 37px;
+}
+
+.adivce-comp-button button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background-color: #53ffab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-comp-btn-img:hover {
+  rotate: 360deg;
+  transition: all 1.2s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .advice-card {
+    width: 360px;
+    height: 350px;
+  }
+
+  .adivce-comp-text {
+    width: 320px;
+    height: 160px;
+  }
+
+  .advice-style-elements {
+    margin-top: 53px;
+  }
+
+  .adivce-comp-button {
+    margin-top: 30px;
+  }
+
+  .el-line {
+    width: 130px;
+  }
+}
